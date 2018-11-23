@@ -1,0 +1,7 @@
+<div *ngFor="let post of posts">
+  <p><app-graphics
+    [imageUrl]="post.thumbnailUrl"></app-graphics>
+  <app-item
+    [content]="post.title"></app-item>
+  <button (click)="goToPostDetails(post.id)">More...</button></p>
+</div>
